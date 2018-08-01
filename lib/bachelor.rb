@@ -68,7 +68,6 @@ def get_average_age_for_season(data, season)
         hash.each do |key, value|
           if key == "age"
             array << value.to_i
-            array.inject{ |sum, el| sum + el }.to_f / array.size
           end
         end
       end
